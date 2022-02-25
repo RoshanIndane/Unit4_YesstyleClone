@@ -15,8 +15,6 @@ div{
     /* border: 0.5px solid red; */
 }
 
-
-
 header{
     height: 100px;
     width: 100%;
@@ -55,6 +53,8 @@ header{
     height: 80%; 
     /* border: 2px solid blue; */
 }
+
+
 .firDivUpperHalf, .secDivUpperHalf, #headerMainLogo{
     width: 20%;
     display: flex;
