@@ -297,7 +297,7 @@ function getTheDataFlashSalesUnderThree(el) {
 // This functionality is for the box titled Flash Sales upto 25% off
 
 // CountDown timer
-var deadlineForFlashSalesUptoTwentyFive = new Date("mar 31, 2022 23:59:00").getTime();
+var deadlineForFlashSalesUptoTwentyFive = new Date("mar 3, 2021 23:59:00").getTime();
 // console.log(deadline);
 var flashSalesUnderTwentyFivInt = setInterval(function () {
     var now = new Date().getTime();
@@ -680,7 +680,7 @@ if(localStorage.getItem("flagforlogin") === null) {
 }
 var login = JSON.parse(localStorage.getItem("flagforlogin"));
 if(login[0] == true) {
-    document.getElementById("a_sign_in").innerHTML = "Welcome" + login[1];
+    document.getElementById("a_sign_in").innerHTML = "Welcome " + login[1];
     document.getElementById("a_register_now").innerHTML = "Sign Out";
 }
 let check_sign_out = document.getElementById("a_register_now");
