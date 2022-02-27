@@ -2,8 +2,9 @@
 if (localStorage.getItem("showProducts") === null) {
     localStorage.setItem("showProducts", JSON.stringify([]));
 }
-var newArr_whatshot_pants_data = [
-    {
+
+
+var newArr_whatshot_pants_data = [{
         image: "https://d1flfk77wl2xk4.cloudfront.net/Assets/60/126/M_p0139112660.jpg",
         title: "Lemongrass - Floral Lace Bustier Top",
         price: 17.77,
@@ -84,8 +85,7 @@ function getTheDataRecommendedBoxHomepage(el) {
 showReccomData(newArr_whatshot_pants_data);
 
 // This is the data for the box titled Recently viewed
-var recentlyViewedBoxData = [
-    {
+var recentlyViewedBoxData = [{
         image: "https://d1flfk77wl2xk4.cloudfront.net/Assets/14/221/M_p0132422114.jpg",
     },
     {
@@ -215,8 +215,7 @@ var flashSalesInt = setInterval(function () {
 
 
 // This is data for the box titled fleshSalesUnder2.99Dollar
-var fleshSalesUnderThreeDollars = [
-    {
+var fleshSalesUnderThreeDollars = [{
         image: "https://d1flfk77wl2xk4.cloudfront.net/Assets/86/182/M_p0128518286.jpg",
         price: 8.99,
         claimedPerc: "6%",
@@ -323,8 +322,7 @@ var flashSalesUnderTwentyFivInt = setInterval(function () {
 
 }, 1000);
 
-var fleshSalesUptoTwentyFive = [
-    {
+var fleshSalesUptoTwentyFive = [{
         image: "https://d1flfk77wl2xk4.cloudfront.net/Assets/15/203/M_p0126820315.jpg",
         price: 8.99,
         claimedPerc: "6%",
@@ -406,8 +404,7 @@ showFleshSalesUpto25Data(fleshSalesUptoTwentyFive);
 
 // It's for stock clearance box
 
-var stockClearanceData = [
-    {
+var stockClearanceData = [{
         image: "https://d1flfk77wl2xk4.cloudfront.net/Assets/87/209/M_p0149120987.jpg",
         price: 8.99,
         claimedPerc: "6%",
@@ -494,6 +491,7 @@ let images = [
 
 let container = document.getElementById("mySlideshow");
 let interval;
+
 function startSlideshow() {
     let counter = 0;
     let image = document.createElement("img");
@@ -675,20 +673,21 @@ function hidesearchbar() {
     search.style.visibility = "hidden";
 }
 
-if(localStorage.getItem("flagforlogin") === null) {
-    localStorage.setItem("flagforlogin",JSON.stringify([false]));
+if (localStorage.getItem("flagforlogin") === null) {
+    localStorage.setItem("flagforlogin", JSON.stringify([false]));
 }
 var login = JSON.parse(localStorage.getItem("flagforlogin"));
-if(login[0] == true) {
+if (login[0] == true) {
     document.getElementById("a_sign_in").innerHTML = "Welcome" + login[1];
     document.getElementById("a_register_now").innerHTML = "Sign Out";
 }
 let check_sign_out = document.getElementById("a_register_now");
-if(check_sign_out.innerHTML === "Sign Out") {
-     check_sign_out.addEventListener("click",flagforloginnull);
-     check_sign_out.style.pointerEvents = "homepage.html";
+if (check_sign_out.innerHTML === "Sign Out") {
+    check_sign_out.addEventListener("click", flagforloginnull);
+    check_sign_out.style.pointerEvents = "homepage.html";
     //  check_sign_out.style.pointerEvents = "none";
 }
-function flagforloginnull(){
-    localStorage.setItem("flagforlogin",JSON.stringify([false]));
+
+function flagforloginnull() {
+    localStorage.setItem("flagforlogin", JSON.stringify([false]));
 }
